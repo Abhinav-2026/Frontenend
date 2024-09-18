@@ -1,0 +1,27 @@
+body{
+  font-family:sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 10), 35px); /* Columns */
+  grid-template-rows: repeat(var(--rows, 10), 35px);    /* Rows */
+  gap: 2px;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+/Edge */
+}
+
+
+.box{
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .selected{
+  background-color: lightblue;
+} */
